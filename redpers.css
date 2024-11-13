@@ -1,187 +1,237 @@
 /*  TIEMPOS FONT */
 /*  TIEMPOS HEADLINE is for citates and article titles. */
-/*  TIEMPOS TEXT is for regular text */
-/*  INTER is for small headers and other pieces of text */
+/*  TIEMPOS TEXT is for article text */
+/*  INTER is for regular text, small headers and other pieces of text */
 @font-face {
-    font-family: 'Tiempos Text';
-    src: url('./fonts/TiemposText-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Tiempos Text';
-    src: url('./fonts/TiemposText-RegularItalic.otf') format('opentype');
-    font-weight: normal;
-    font-style: italic;
+ font-family: "Tiempos Text";
+ src: url("./fonts/TiemposText-Regular.otf") format("opentype");
+ font-weight: normal;
+ font-style: normal;
 }
 
 @font-face {
-    font-family: 'Tiempos Headline';
-    src: url('./fonts/TiemposHeadline-Bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
+ font-family: "Tiempos Text";
+ src: url("./fonts/TiemposText-RegularItalic.otf") format("opentype");
+ font-weight: normal;
+ font-style: italic;
 }
 
-
-body{
-
-/* --- COLORS --- */
-
-    /* -- PRIMARY COLOR (RED) -- */
-    --primary-color: rgb(232,83,64); /* #E85340 */
-    --primary-color-light: rgb(249,205,200); /* #F9CDC8 */
-    --primary-color-lighter: rgb(249,212,207); /* #F9D4CF */
-    --primary-color-lightest: rgb(255,244,242); /* #FFF4F2 */
-    --primary-color-accent: rgb(232,83,64); /* #E85340 */ /* Bruinrood */
-
-    /* -- SECONDARY COLOR (GREEN) -- */
-    --secondary-color: rgb(244, 251, 233); /* #F4FBE9 */
-    --secondary-color-dark: rgb(129,165,72); /* #81A548 */
-
-    /* Grijstinten */
-    --black: rgb(0,0,0); /* #000000 */
-    --black-opacity: rgba(0, 0, 0, 0.71); /* #000000B5 */
-    --white: rgb(255,255,255); /* #FFFFFF */
-    --black-author: rgb(68,68,68); /* #444444 */
-    --grey: rgb(116,116,116); /* #747474 */
-    --darkgrey: rgb(123,123,122); /* #7B7B7A */
-
-/* --- */
-
-/* --- TYPOGHRAPHY */
-
-    /* DEFINE FONT-FAMILIES */
-    --font-text: 'Tiempos Text', sans-serif;   
-    --font-heading: "Inter", sans-serif;
-    --font-heading-important: "Tiempos Headline", sans-serif;
-
-    /* DEFINE FONT-SIZES FOR TEXTS*/
-
-    --font-size-text: 12px;
-    --font-size-meta: 11px;
-    --font-size-intro: 21px;
-
-    /* DEFINE FONT-SIZES FOR HEADERS*/
-
-    --font-size-header-xl: 48px;
-    --font-size-header-l: 32px;
-    --font-size-header-m: 20px;
-    --font-size-header-s: 18px;
-    --font-size-header-xs: 14px;
-
-    /*  LETTER SPACINGS  */
-
-    --letter-spacing-xs: -2%;
-    --letter-spacing-s: -1%;
-    --letter-spacing-m: 8%;
-    --letter-spacing-l: 10%;
-
-    /*  LINE HEIGHTS  */
-
-    --line-height-l: 150%; /*artikeltekst*/
-    --line-height-m: 144%; /*Introtekst, donatiebox, auteurtekst*/
-    --line-height-s: 125%; /*uitgelichte titel*/
-    --line-height-xs: 120%; /*Koptekst*/
-
-/* Base values for body */
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-text); /* Fallback font */
-}
-@media (prefers-contrast: more){
-    body{
-        --primary-color: #9B2212;
-        --primary-color-accent: #8B504B;
-        --darkgrey:  #757575;
-    }
+@font-face {
+ font-family: "Tiempos Headline";
+ src: url("./fonts/TiemposHeadline-Bold.otf") format("opentype");
+ font-weight: bold;
+ font-style: normal;
 }
 
+body {
+ /* --- COLORS --- */
+
+ /* -- PRIMARY COLOR (RED) -- */
+ --primary-color: rgb(232, 83, 64); /* #E85340 */
+ --primary-color-light: rgb(249, 205, 200); /* #F9CDC8 */
+ --primary-color-lighter: rgb(249, 212, 207); /* #F9D4CF */
+ --primary-color-lightest: rgb(255, 244, 242); /* #FFF4F2 */
+ --primary-color-accent: rgb(232, 83, 64); /* #E85340 */ /* Bruinrood */
+
+ /* -- SECONDARY COLOR (GREEN) -- */
+ --secondary-color: rgb(244, 251, 233); /* #F4FBE9 */
+ --secondary-color-dark: rgb(129, 165, 72); /* #81A548 */
+
+ /* Grijstinten */
+ --black: rgb(0, 0, 0); /* #000000 */
+ --black-opacity: rgba(0, 0, 0, 0.71); /* #000000B5 */
+ --white: rgb(255, 255, 255); /* #FFFFFF */
+ --black-author: rgb(68, 68, 68); /* #444444 */
+ --grey: rgb(116, 116, 116); /* #747474 */
+ --darkgrey: rgb(123, 123, 122); /* #7B7B7A */
+
+ /* --- */
+
+ /* --- TYPOGHRAPHY */
+
+ /* DEFINE FONT-FAMILIES */
+ --font-default: "Inter", sans-serif;
+ --font-article: "Tiempos Text", sans-serif;
+ --font-heading-important: "Tiempos Headline", sans-serif;
+
+ /* DEFINE FONT-SIZES FOR TEXTS*/
+
+ --font-size-text: 12px;
+ --font-size-meta: 11px;
+ --font-size-intro: 21px;
+
+ /* DEFINE FONT-SIZES FOR HEADERS*/
+
+ --font-size-header-xxl: 48px;
+ --font-size-header-xl: 38px;
+ --font-size-header-l: 32px;
+ --font-size-header-m: 20px;
+ --font-size-header-s: 18px;
+ --font-size-header-xs: 14px;
+
+ /*  LETTER SPACINGS  */
+
+ --letter-spacing-xs: -2%;
+ --letter-spacing-s: -1%;
+ --letter-spacing-m: 8%;
+ --letter-spacing-l: 10%;
+
+ /*  LINE HEIGHTS  */
+
+ --line-height-l: 150%; /*artikeltekst*/
+ --line-height-m: 144%; /*Introtekst, donatiebox, auteurtekst*/
+ --line-height-s: 125%; /*uitgelichte titel*/
+ --line-height-xs: 120%; /*Koptekst*/
+
+ /* Base values for body */
+
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: var(--font-default); /* Fallback font */
+ color: var(--black); /* base text color */
+}
+@media (prefers-contrast: more) {
+ body {
+  --primary-color: #9b2212;
+  --primary-color-accent: #8b504b;
+  --darkgrey: #757575;
+ }
+}
+
+/* HEADINGS */
+
+h1,
+.h1 {
+ /* give an element h1 class if you want a bigger title without having multiple h1 elements on the sdame page */
+ font-size: var(--font-size-header-l);
+ color: var(--black);
+ line-height: var(--line-height-xs);
+ font-weight: bold;
+ font-family: var(--font-heading-important);
+}
+h2,
+.h2 {
+ font-size: var(--font-size-header-m);
+ color: var(--black);
+ font-weight: bold;
+}
+h3,
+.h3 {
+ font-size: var(--font-size-header-s);
+ color: var(--black);
+ font-weight: 900;
+ letter-spacing: var(--letter-spacing-s);
+}
+h4,
+.h4 {
+ font-size: var(--font-size-header-xs);
+ color: var(--black);
+ font-weight: bold;
+ letter-spacing: var(--letter-spacing-xs);
+}
+h1.heading_article,
+.h1.heading_article,
+h2.heading_article,
+.h2.heading_article {
+ /*Artikelkop */
+ font-family: var(--font-heading-important);
+ font-weight: bold;
+ line-height: var(--line-height-xs);
+ font-size: var(--font-size-header-xxl);
+}
+h1.heading_quote,
+.h1.heading_quote,
+h2.heading_quote,
+.h2.heading_quote {
+ /*Quote */
+ font-family: var(--font-heading-important);
+ font-weight: bold;
+ line-height: var(--line-height-xs);
+ font-size: var(--font-size-header-xl);
+}
+
+/* TEXTS */
+p {
+ /* base values for text */
+ font-size: var(--font-size-text);
+}
+p a {
+ /* links in text */
+ color: var(--primary-color);
+ position: relative;
+ &:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--primary-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+ }
+
+ &:hover,
+ &:focus {
+  &:after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+  }
+ }
+}
+
+.text_meta {
+ font-weight: bold;
+ line-height: var(--line-height-m);
+ font-size: var(--font-size-meta);
+ letter-spacing: var(--letter-spacing-l);
+}
+.text_label_top { /*bovenkop*/
+ font-weight: bold;
+ letter-spacing: var(--letter-spacing-m);
+}
+.text_intro { /*intro text*/
+ font-weight: bold;
+ font-size: var(--font-size-intro);
+ letter-spacing: var(--letter-spacing-s);
+}
+.text_subheading{ /* tussenkop */
+font-weight: 900;
+font-size: var(--font-size-header-s);
+line-height: var(--line-height-l);
+}
+/* BUTTONS AND FORMS */
 button, /* Remove base button styling because it blows */
 input[type="submit"], 
 input[type="reset"] {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
+ background: none;
+ color: inherit;
+ border: none;
+ padding: 0;
+ font: inherit;
+ cursor: pointer;
 }
-p{ /* base values for text */
-    font-size: var(--font-size-text);
-    color: var(--black);
-}
-p a{ /* links in text */ 
-    color: var(--primary-color);
-    position: relative;
-    &:after{
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: -2px;
-        left: 0;
-        background-color: var(--primary-color);
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
-    }
-    
-    &:hover,
-    &:focus{
-        &:after{
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
-    }
-}
-h1, .h1{ /* give an element h1 class if you want a bigger title without having multiple h1 elements on the sdame page */
-    font-size: var(--font-size-header-l);
-    color: var(--black);
-    line-height: var(--line-height-xs);
-    font-weight: bold;
-    font-family: var(--font-heading-important);
-}
-h2, .h2{
-    font-size: var(--font-size-header-m);
-    color: var(--black);
-    font-weight: bold;
-    font-family: var(--font-heading);
-}
-h3, .h3{
-    font-size: var(--font-size-header-s);
-    color: var(--black);
-    font-weight: 900;
-    font-family: var(--font-heading);
-}
-h4, .h4{
-    font-size: var(--font-size-header-xs);
-    color: var(--black);
-    font-weight: bold;
-    font-family: var(--font-heading);
-}
-
-form.form_search{
-    display: flex;
-    border: 1px solid var(--black);
-    input[type="text"]{
-        padding-left: calc(50px / 3);
-        padding-right: calc(50px / 3);
-        height: 46px;
-        border: 0;
-        flex: 1;
-        max-height: 46px;
-    }
-    button{
-        height: 48px;
-        width: 50px;
-        background-color: var(--darkgrey);
-        svg{
-            width: 16px;
-            height: 16px;
-            fill: var(--white);
-        }
-    }
+form.form_search {
+ display: flex;
+ border: 1px solid var(--black);
+ input[type="text"] {
+  padding-left: calc(50px / 3);
+  padding-right: calc(50px / 3);
+  height: 46px;
+  border: 0;
+  flex: 1;
+  max-height: 46px;
+ }
+ button {
+  height: 48px;
+  width: 50px;
+  background-color: var(--darkgrey);
+  svg {
+   width: 16px;
+   height: 16px;
+   fill: var(--white);
+  }
+ }
 }
