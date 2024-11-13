@@ -3,7 +3,7 @@
 
 
 
-   :root {
+   body {
     /* Colors */
     --clr-primary: #000000;                       /* Main color for headings and important text */
     --clr-secondary: #747474;                     /* Secondary color for subtext and supporting elements */
@@ -81,3 +81,16 @@
 
 
 /* Formulier elementen */
+
+
+
+
+/* test dylan */
+
+/* 
+.btn
+.btn primary
+.btn secondary
+.btn utility
+.btn playbtn
+*/
