@@ -1,96 +1,100 @@
-/* Schrijf hier de verschillende stijlen, die gedeeld gaan
-   worden door jullie projecten */
-
-
-
-   body {
-    /* Colors */
-    --clr-primary: #000000;                       /* Main color for headings and important text */
-    --clr-secondary: #747474;                     /* Secondary color for subtext and supporting elements */
-    --clr-email-link: #E85340;                    /* Specific color for email links */
-
-    /* Button and Link Colors */
-    --btn-bg: var(--clr-primary);                   /* Button background color */
-    --btn-hover-bg: #333333;                      /* Background color for buttons on hover */
-    --btn-hover-text: #FFFFFF;                    /* Text color for buttons on hover */
-    --btn-focus-bg: #4a4a4a;                      /* Background color for buttons on focus */
-    --btn-focus-text: #FFFFFF;                    /* Text color for buttons on focus */
-    --btn-active-bg: #000000;                     /* Background color for buttons when active */
-    --btn-active-text: #FFFFFF;                   /* Text color for buttons when active */
-    --link-hover: var(--clr-email-link);            /* Link color on hover */
-    --link-focus: #E85340;                        /* Link color on focus */
-    --link-active: #d94136;                       /* Link color when active */
-    --footer-bg: #000000;                         /* Footer background color */
-    --footer-text: #FFFFFF;                       /* Footer text color */
-
-    /* Shadow Settings */
-    --btn-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.2); /* Button shadow on hover */
-    --btn-focus-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.3); /* Button shadow on focus */
-    --btn-active-shadow: inset 0 0.2vw 0.4vw rgba(0, 0, 0, 0.2); /* Inset shadow when active */
-
-    /* Border Styles on Interaction */
-    --btn-border-hover: 0.125rem solid var(--link-hover); /* Button border on hover */
-    --btn-border-focus: 0.125rem solid var(--btn-focus-text); /* Button border on focus */
-    --btn-border-active: 0.125rem solid var(--btn-active-bg); /* Button border when active */
-
-    /* Fonts */
-    --font-main: "Roboto", sans-serif;           /* Main font for paragraphs and regular text */
-    --font-heading: "Tiempos Headline", serif;   /* Font for headings and subheadings */
-    --font-alt: "Inter", sans-serif;             /* Alternate font for smaller texts, like in the footer */
-
-    /* Font Sizes */ 
-    --font-size-base: 1rem;                            /* Base font size */
-    --font-size-h1: clamp(1.5rem, 2vw + 1rem, 2rem); /* Responsive H1 size */
-    --font-size-h2: clamp(1.25rem, 1.5vw + 1rem, 1.5rem); /* Responsive H2 size */
-    --font-size-body: clamp(1rem, 1.2vw, 1.25rem); /* Responsive body text size */
-
-
+/*  TIEMPOS FONT */
+@font-face {
+    font-family: 'Tiempos Text';
+    src: url('./../fonts/TiemposText-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.home {
-    --bg-home: #F7F7F5;                          /* Background color for home page */
-    --size-h1: var(--font-size-h1);                /* H1 size */
-    --size-h2: var(--font-size-h2);                /* H2 size */
-    --size-h3: clamp(2rem, 2vw + 1rem, 2rem);      /* H3 size (~32px) */
-    --size-p: var(--font-size-body);               /* Paragraph size */
-    --footer-bg-home: var(--footer-bg);            /* Footer background color */
-    --footer-text-home: var(--footer-text);        /* Footer text color */
-    --size-author: clamp(0.75rem, 0.9vw, 0.75rem); /* Author text size (~12px) */
-    --size-news-category: clamp(1.25rem, 1.5vw, 1.25rem); /* News category size (~20px) */
-    --size-link-more: clamp(0.8125rem, 1vw, 0.8125rem); /* Link for "more categories" size (~13px) */
+@font-face {
+    font-family: 'Tiempos Text';
+    src: url('./../fonts/TiemposText-RegularItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
 }
 
-.contact {
-    --bg-contact: #FFFFFF;                    /* Background color for contact page */
-    --size-h2: var(--font-size-h2);             /* H2 size */
-    --size-p: var(--font-size-body);            /* Paragraph size */
-    --footer-bg-contact: var(--footer-bg);      /* Footer background color */
-    --footer-text-contact: var(--footer-text);  /* Footer text color */
+@font-face {
+    font-family: 'Tiempos Headline';
+    src: url('./../fonts/TiemposHeadline-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
 }
 
 
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+
+/* --- COLORS --- */
+
+    /* -- PRIMARY COLOR (RED) -- */
+    --primary-color: rgb(232,83,64);
+    --primary-color-light: rgb(249,205,200);
+    --primary-color-lighter: rgb(249,212,207);
+    --primary-color-lightest: rgb(255,244,242);
+    --primary-color-accent: rgb(232,83,64); /* Bruinrood */
+
+    /* -- SECONDARY COLOR (GREEN) */
+
+    --secondary-color: rgb(244 251 233);
+    --secondary-color-dark: rgb(129, 165, 72);
+
+    /* Grijstinten  */
+    --black: rgb(0,0,0);
+    --black-opacity: rgba(0, 0, 0, 0.71);
+    --white: rgb(255,255,255);
+    --black-author: rgb(68,68,68);
+    --grey: rgb(116,116,116);
+    --darkgrey: rgb(123,123,122); 
+/* --- */
+
+/* --- TYPOGHRAPHY */
+
+    /* ALT FONT */
+    --font-heading: 'Tiempos Headline', sans-serif;   
+    /*  */
+
+    --font-size-text: 12px;
+    --font-size-meta: 11px;
+    --font-size-intro: 21px;
+
+    --font-size-header-xl: 48px;
+    --font-size-header-l: 32px;
+    --font-size-header-m: 20px;
+    --font-size-header-s: 18px;
+    --font-size-header-xs: 14px;
+
+/* --- LETTER SPACINGS --- */
 
 
+    --letter-spacing-xs: -2%;
+    --letter-spacing-s: -1%;
+    --letter-spacing-m: 8%;
+    --letter-spacing-l: 10%;
 
-/* Kleuren */
-.color-example {
-    background-color: #bada55;
+/* --- LINE HEIGHTS --- */
+
+    --line-height-l: 150%; /*artikeltekst*/
+    --line-height-m: 144%; /*Introtekst, donatiebox, auteurtekst*/
+    --line-height-s: 125%; /*uitgelichte titel*/
+    --line-height-xs: 120%; /*Koptekst*/
+
+}
+@media (prefers-contrast: more){
+    body{
+        --primary-color: #9B2212;
+        --primary-color-accent: #8B504B;
+        --darkgrey:  #757575;
+    }
 }
 
-/* Typografie */
 
-
-/* Formulier elementen */
-
-
-
-
-/* test dylan */
-
-/* 
-.btn
-.btn primary
-.btn secondary
-.btn utility
-.btn playbtn
-*/
+h1{
+    font-size: var(--font-size-header-xl);
+    color: var(--black);
+    line-height: var(--line-height-xs);
+    font-weight: bold;
+    font-family: var(--font-heading);
+}

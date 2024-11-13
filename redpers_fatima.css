@@ -1,0 +1,100 @@
+/* Schrijf hier de verschillende stijlen, die gedeeld gaan
+   worden door jullie projecten */
+
+
+
+   body {
+    /* Colors */
+    --clr-primary: #000000;                       /* Main color for headings and important text */
+    --clr-secondary: #747474;                     /* Secondary color for subtext and supporting elements */
+    --clr-email-link: #E85340;                    /* Specific color for email links */
+
+    /* Button and Link Colors */
+    --btn-bg: var(--clr-primary);                   /* Button background color */
+    --btn-hover-bg: #333333;                      /* Background color for buttons on hover */
+    --btn-hover-text: #FFFFFF;                    /* Text color for buttons on hover */
+    --btn-focus-bg: #4a4a4a;                      /* Background color for buttons on focus */
+    --btn-focus-text: #FFFFFF;                    /* Text color for buttons on focus */
+    --btn-active-bg: #000000;                     /* Background color for buttons when active */
+    --btn-active-text: #FFFFFF;                   /* Text color for buttons when active */
+    --link-hover: var(--clr-email-link);            /* Link color on hover */
+    --link-focus: #E85340;                        /* Link color on focus */
+    --link-active: #d94136;                       /* Link color when active */
+    --footer-bg: #000000;                         /* Footer background color */
+    --footer-text: #FFFFFF;                       /* Footer text color */
+
+    /* Shadow Settings */
+    --btn-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.2); /* Button shadow on hover */
+    --btn-focus-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.3); /* Button shadow on focus */
+    --btn-active-shadow: inset 0 0.2vw 0.4vw rgba(0, 0, 0, 0.2); /* Inset shadow when active */
+
+    /* Border Styles on Interaction */
+    --btn-border-hover: 0.125rem solid var(--link-hover); /* Button border on hover */
+    --btn-border-focus: 0.125rem solid var(--btn-focus-text); /* Button border on focus */
+    --btn-border-active: 0.125rem solid var(--btn-active-bg); /* Button border when active */
+
+    /* Fonts */
+    --font-main: "Roboto", sans-serif;           /* Main font for paragraphs and regular text */
+    --font-heading: "Tiempos Headline", serif;   /* Font for headings and subheadings */
+    --font-alt: "Inter", sans-serif;             /* Alternate font for smaller texts, like in the footer */
+
+    /* Font Sizes */ 
+    --font-size-base: 1rem;                            /* Base font size */
+    --font-size-h1: clamp(1.5rem, 2vw + 1rem, 2rem); /* Responsive H1 size */
+    --font-size-h2: clamp(1.25rem, 1.5vw + 1rem, 1.5rem); /* Responsive H2 size */
+    --font-size-body: clamp(1rem, 1.2vw, 1.25rem); /* Responsive body text size */
+
+
+}
+
+.home {
+    --bg-home: #F7F7F5;                          /* Background color for home page */
+    --size-h1: var(--font-size-h1);                /* H1 size */
+    --size-h2: var(--font-size-h2);                /* H2 size */
+    --size-h3: clamp(2rem, 2vw + 1rem, 2rem);      /* H3 size (~32px) */
+    --size-p: var(--font-size-body);               /* Paragraph size */
+    --footer-bg-home: var(--footer-bg);            /* Footer background color */
+    --footer-text-home: var(--footer-text);        /* Footer text color */
+    --size-author: clamp(0.75rem, 0.9vw, 0.75rem); /* Author text size (~12px) */
+    --size-news-category: clamp(1.25rem, 1.5vw, 1.25rem); /* News category size (~20px) */
+    --size-link-more: clamp(0.8125rem, 1vw, 0.8125rem); /* Link for "more categories" size (~13px) */
+}
+
+.contact {
+    --bg-contact: #FFFFFF;                    /* Background color for contact page */
+    --size-h2: var(--font-size-h2);             /* H2 size */
+    --size-p: var(--font-size-body);            /* Paragraph size */
+    --footer-bg-contact: var(--footer-bg);      /* Footer background color */
+    --footer-text-contact: var(--footer-text);  /* Footer text color */
+}
+
+
+
+
+
+/* Kleuren */
+.color-example {
+    background-color: #bada55;
+}
+
+/* Typografie */
+h1{
+        font-size: 32px;
+    line-height: 1.2em;
+    letter-spacing: -1px;
+}
+
+/* Formulier elementen */
+
+
+
+
+/* test dylan */
+
+/* 
+.btn
+.btn primary
+.btn secondary
+.btn utility
+.btn playbtn
+*/
