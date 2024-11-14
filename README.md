@@ -13,7 +13,7 @@ Dit project bevat de styleguide voor Red Pers. Deze styleguide bevat HTML-code w
 ---
 
 ### Bestandsstructuur
-De stadnaard projectstructuur bestaat uit vier hoofdmappen:
+De standaard projectstructuur bestaat uit vier hoofdmappen:
 styles: Bevat de CSS-bestanden, inclusief het hoofdhuisstijlbestand.
 fonts: Bevat de benodigde lettertypes, zoals Tiempos en Inter.
 scripts: Bevat de JavaScript-bestand(en)
@@ -63,13 +63,13 @@ Om de CSS-structuur consistent en begrijpelijk te houden, gebruiken we een vaste
 
 ### Componenten en Gebruik
 
-**Koppen**
+**Koppen**  
 Koppen worden gestileerd met verschillende klassen op basis van hun functie. Bijvoorbeeld, `.heading_article` wordt gebruikt voor artikelkoppen, en `.heading_quote` voor citaten. 
 
-**Knoppen**
+**Knoppen**  
 De knoppen in de huisstijl zijn ontworpen voor specifieke functies en bevatten standaardstijlen voor interacties zoals hover en focus. Voorbeelden zijn `.button_play` voor audio-knoppen en `.button_subscribe` voor de aanmeldingsknop voor nieuwsbrieven.
 
-**Formulieren**
+**Formulieren**  
 Formulieren hebben gestileerde input- en submit-elementen zonder de standaard styling van knoppen. Zo worden zoekformulieren gedefinieerd in `.form_search`, met bijpassende invoervelden en knoppen.
 
 ---
