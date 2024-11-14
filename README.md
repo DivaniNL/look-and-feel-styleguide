@@ -70,7 +70,7 @@ Koppen worden gestileerd met verschillende klassen op basis van hun functie. Bij
 De knoppen in de huisstijl zijn ontworpen voor specifieke functies en bevatten standaardstijlen voor interacties zoals hover en focus. Voorbeelden zijn `.button_play` voor audio-knoppen en `.button_subscribe` voor de aanmeldingsknop voor nieuwsbrieven.
 
 **Formulieren**  
-Formulieren hebben gestileerde input- en submit-elementen zonder de standaard styling van knoppen. Zo worden zoekformulieren gedefinieerd in `.form_search`, met bijpassende invoervelden en knoppen.
+Formulieren bestaan uit verschillende inputvelden en een submit knop. Ook in de searchpopup bevind zich een formulier met een submitknop die een icoon bevat van een vergrootglas. De submitknop op de contactpagina zal hoogstwaarschijnlijk dezelfde stijl krijgen als de "button_menu". Mocht dit veranderen zal ik dit vermelden
 
 ---
 
