@@ -42,12 +42,11 @@ body {
  --black-opacity: rgba(0, 0, 0, 0.71); /* #000000B5 */
  --white: rgb(255, 255, 255); /* #FFFFFF */
  --black-author: rgb(68, 68, 68); /* #444444 */
- --grey: rgb(116, 116, 116); /* #747474 */
+ --grey: #AAAAAA; 
  --darkgrey: rgb(123, 123, 122); /* #7B7B7A */
  --lightgrey: rgb(225, 225, 225); /* #E1E1E1 */
 
  /* --- */
-
  /* --- TYPOGHRAPHY */
 
  /* DEFINE FONT-FAMILIES */

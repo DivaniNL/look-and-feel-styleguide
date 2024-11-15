@@ -6,239 +6,218 @@
     <title>[Projectnaam] - Styleguide</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="redpers.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <header>
-      <h1>[Projectnaam] - Styleguide</h1>
-      <p>Dit is de styleguide voor het project [Projectnaam]. Hierin zijn een aantal huisstijl onderdelen gedefinieerd.</p>
-      <p>Gebruik de volgende gedeelde stylesheet binnen je eigen project:
-        <!-- Pas deze aan zodra deze repository live staat op GitHub Pages -->
-        <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://....github.io/.../projectnaam.css&quot;&gt;</code>
-      </p>
+      <h1>Redpers Styleguide</h1>
+        <nav>
+         <a href="#kleur" class="nav-button">Kleuren</a>
+         <a href="#typografie" class="nav-button">Typografie</a>
+         <a href="#formulieren" class="nav-button">Formulier elementen</a>
+         <a href="#buttons" class="nav-button">Buttons</a>
+         <a href="#Logo's" class="nav-button">Logo's</a>
+         <a href="#Icons" class="nav-button">Icons</a>
+       </nav>
     </header>
 
-    <nav>
-      <a href="#kleur">Kleuren</a>
-      <a href="#typografie">Typografie</a>
-      <a href="#formulieren">Formulier elementen</a>
-      <!-- En eventueel meer categorieën -->
-    </nav>
-
-
+<!-- //Kleuren section -->
     <section id="kleur">
-
       <h2>Kleuren</h2>
-      <p>Bij het onderdeel kleuren staat het kleurgebruik.</p>
-
-      <figure>
-        <code class="">#E85340</code>
-        <figcaption>Rood</figcaption>
-      </figure>
-      <figure>
-        <code class="">#F9CDC8</code>
-        <figcaption>Rood - licht</figcaption>
-      </figure>
-      <figure>
-        <code class="">#F9D4CF</code>
-        <figcaption>Rood - lichter</figcaption>
-      </figure>
-      <figure>
-        <code class="color-example">#FFF4F2</code>
-        <figcaption>Rood - zeer licht</figcaption>
-      </figure>
-      <figure>
-        <code class="">#000000</code>
-        <figcaption>Zwart</figcaption>
-      </figure>
-      <figure>
-        <code class="">#000000</code>
-        <figcaption>Zwart - opacity</figcaption>
-      </figure>
-      <figure>
-        <code class="">#444444</code>
-        <figcaption>Zwart - auteurtekst</figcaption>
-      </figure>
-      <figure>
-        <code class="">#AAAAAA</code>
-        <figcaption>Grijs - Lichtgrijs</figcaption>
-      </figure>
-      <figure>
-        <code class="">#7B7B7A</code>
-        <figcaption>Grijs - donkergrijs</figcaption>
-      </figure>
-      <figure>
-        <code class="">#000000</code>
-        <figcaption>Wit</figcaption>
-      </figure>
-
+    
+      <!-- Accordion sectie voor roodtinten -->
+      <details>
+        <summary>Roodtinten</summary>
+        <figure>
+          <code>#E85340</code>
+          <figcaption>Rood</figcaption>
+        </figure>
+        <figure>
+          <code>#F9CDC8</code>
+          <figcaption>Rood - licht</figcaption>
+        </figure>
+        <figure>
+          <code>#F9D4CF</code>
+          <figcaption>Rood - lichter</figcaption>
+        </figure>
+        <figure>
+          <code>#FFF4F2</code>
+          <figcaption>Rood - zeer licht</figcaption>
+        </figure>
+      </details>
+    
+      <!-- Accordion sectie voor grijstinten -->
+      <details>
+        <summary>Grijstinten</summary>
+        <figure>
+          <code>#000000</code>
+          <figcaption>Zwart</figcaption>
+        </figure>
+        <figure>
+          <code>#444444</code>
+          <figcaption>Zwart - auteurtekst</figcaption>
+        </figure>
+        <figure>
+          <code>#AAAAAA</code>
+          <figcaption>Grijs - lichtgrijs</figcaption>
+        </figure>
+        <figure>
+          <code>#7B7B7A</code>
+          <figcaption>Grijs - donkergrijs</figcaption>
+        </figure>
+        <figure>
+          <code>#FFFFFF</code>
+          <figcaption>Wit</figcaption>
+        </figure>
+      </details>
+    
+      <!-- Accordion sectie voor groentinten -->
+      <details>
+        <summary>Groentinten</summary>
+        <figure>
+          <code>#F4FBE9</code>
+          <figcaption>Lichtgroen</figcaption>
+        </figure>
+        <figure>
+          <code>#81A549</code>
+          <figcaption>Donkergroen</figcaption>
+        </figure>
+      </details>
     </section>
-
-
+    
     <section id="typografie">
 
       <h2>Typografie</h2>
-      <p>Bij het onderdeel typografie worden fonts en groottes gedemonstreerd.</p>
+      <section class="typografie-demo">
+        <article class="typografie-kaart">
+          <h1>Kop 1</h1>
+          <ul>
+            <li>Font Family: Inter</li>
+            <li>Font Style: Extra Bold</li>
+            <li>Font Size: 32px</li>
+            <li>Line Height: 150%</li>
+          </ul>
+        </article>
+      
+        <article class="typografie-kaart">
+          <h2>Kop 2</h2>
+          <ul>
+            <li>Font Family: Inter</li>
+            <li>Font Style: Bold</li>
+            <li>Font Size: 20px</li>
+            <li>Line Height: 100%</li>
+          </ul>
+        </article>
+      
+        <article class="typografie-kaart">
+          <h3>Kop 3</h3>
+          <ul>
+            <li>Font Family: Inter</li>
+            <li>Font Style: Extra Bold</li>
+            <li>Font Size: 18px</li>
+            <li>Line Height: 150%</li>
+            <li>Letter spacing: -1%</li>
+          </ul>
+        </article>
+      
+        <article class="typografie-kaart">
+          <h4>Kop 4</h4>
+          <ul>
+            <li>Font Family: Inter</li>
+            <li>Font Style: Bold</li>
+            <li>Font Size: 14px</li>
+            <li>Line Height: 150%</li>
+            <li>Letter spacing: -2%</li>
+          </ul>
+        </article>
 
-      <h1 class="">Kop 1</h1>
-      <h2 class="">Kop 2</h2>
-      <h3 class="">Kop 3</h3>
-      <h4 class="">Kop 4</h4>
-      <h5 class="">Kop 5</h5>
-
-      <p class="">Simpele alinea's</p>
-      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-      <ul class="">
-        <li>Ongeordende lijsten met items</li>
-        <li>Met nog meer items</li>
-        <li>En nog een item</li>
+        <!-- Body -->
+    <article class="typografie-kaart">
+    <h3>Body</h3>
+      <ul>
+        <li>Font Family: Inter</li>
+        <li>Font Style: Regular</li>
+        <li>Font Size: 16px</li>
+        <li>Line Height: 125%</li>
       </ul>
+    </article>
 
-      <ol class="">
-        <li>Geordende lijsten met items</li>
-        <li>Met nog meer items</li>
-        <li>En nog een item</li>
-      </ol>
+    <!-- Artikelkop -->
+    <article class="typografie-kaart">
+      <h3 class="artikelkop">Artikelkop</h3>
+      <ul>
+        <li>Font Family: Tiempos Headline</li>
+        <li>Font Style: Bold</li>
+        <li>Font Size: 48px</li>
+        <li>Line Height: 120%</li>
+        <li>Letter Spacing: -1%</li>
+      </ul>
+    </article>
 
-      <table class="">
-        <thead>
-          <tr>
-            <th>Tabelkop</th>
-            <th>Tabelkop</th>
-            <th>Tabelkop</th>
-            <th>Tabelkop</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-          </tr>
-          <tr>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-          </tr>
-          <tr>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-          </tr>
-          <tr>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-          </tr>
-          <tr>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- Introtekst -->
+    <article class="typografie-kaart">
+      <h3>Introtekst</h3>
+      <ul>
+        <li>Font Family: Inter</li>
+        <li>Font Style: Light</li>
+        <li>Font Size: 21px</li>
+        <li>Line Height: 144%</li>
+        <li>Letter Spacing: -1%</li>
+      </ul>
+    </article>
 
+    <!-- Uitgelicht citaat -->
+    <article class="typografie-kaart">
+      <h3>Uitgelicht citaat</h3>
+      <ul>
+        <li>Font Family: Tiempos Headline</li>
+        <li>Font Style: Bold</li>
+        <li>Font Size: 38px</li>
+        <li>Line Height: 100%</li>
+      </ul>
+    </article>
+      </section>
     </section>
-
-
-    <section id="formulieren">
-
-      <h2>Formulier elementen</h2>
-      <p>Bij het onderdeel formulier elementen worden input, radio, checkbox en buttons gedemonstreerd.</p>
-
-      <form class="">
-        <label class="">
-          Text: 
-          <input type="text" class="">
-        </label>
-        
-
-        <fieldset class="">
-          <legend class="">Radio options:</legend>
-
-          <label class="">
-            <input type="radio" name="radio-options" value="option 1" checked class="">
-            Option 1
-          </label>
-
-          <label class="">
-            <input type="radio" name="radio-options" value="option 2" class="">
-            Option 2
-          </label>
-
-          <label class="">
-            <input type="radio" name="radio-options" value="option 3" class="">
-            Option 3
-          </label>
-        </fieldset>
-        
-        <fieldset class="">
-          <legend class="">Checkbox</legend>
-
-          <label class="">
-            <input type="checkbox" name="checkbox-1" checked class="">
-            Checkbox 1
-          </label>
-
-          <label class="">
-            <input type="checkbox" name="checkbox-2" class="">
-            Checkbox 2
-          </label>
-
-          <label class="">
-            <input type="checkbox" name="chekcbox-3" class="">
-            Checkbox 3
-          </label>
-        </fieldset>
-
-        <label class="">
-          Search: 
-          <input type="search" class="">
-        </label>
-        
-        <label class="">
-          Tel: 
-          <input type="tel" class="">
-        </label>
-
-        <label class="">
-          Range: 
-          <input type="range" class="">
-        </label>
-
-        <input type="submit" value="Submit button" class="">
-        
-        <button type="button" class="">Button</button>
-      </form>
-
-
-      <h2>ZOEK FORMULIER (IN POPUP)</h2>
-      <form action="/search" method="GET" class="form_search">
-        <input type="text" name="q" placeholder="Search...">
-
-        <button type="submit">
-            <svg xmlns="http://www.w3.org/2000/svg" width="29" viewBox="0 0 512 512" height="25">
-                <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6 .1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
-            </svg>
-        </button>
-    </form>
-    <br><br>
+    <section id="buttons">
+      <h2>Buttons</h2>
     
-    </section>
+      <!-- Play/Pause Button -->
+      <button class="button_play" aria-label="Play Button">
+        <svg width="20" height="20" viewBox="0 0 24 24">
+          <!-- Play Icon -->
+          <polygon points="5,3 19,12 5,21" fill="currentColor"></polygon>
+        </svg>
+        <span>Play</span>
+      </button>
+    
+      <!-- CTA Menu Button -->
+      <button class="button_menu" aria-label="CTA Menu Button">Menu Button</button>
+    
+      <!-- Subscribe Button -->
+      <button class="button_subscribe" aria-label="Subscribe Button">
 
+          <!-- Subscribe Icon -->
+          <path d="M12 2 L20 12 L12 22 L4 12 Z" fill="currentColor"></path>
+        </svg>
+        Subscribe
+      </button>
+      </section>
 
-    <!-- En eventueel meer categorieën -->
-
+      <section id="formulieren">
+        <h2>Formulier Elementen</h2>
+        <form action="/search" method="GET" class="form_search">
+          <input type="text" name="q" placeholder="Search...">
+  
+          <button type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="29" viewBox="0 0 512 512" height="25">
+                  <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6 .1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
+              </svg>
+          </button>
+      </form>
+      <br><br> 
+      </section>
   </body>
 </html>
