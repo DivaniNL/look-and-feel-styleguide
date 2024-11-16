@@ -94,9 +94,10 @@ body {
 
 @media (prefers-contrast: more) { /* WCAG AAA colors */
  body {
-  --primary-color: #9b2212;
+  --primary-color: #841E10;
   --primary-color-accent: #8b504b;
   --darkgrey: #757575;
+  --secondary-color-dark: #4B5F2B;
  }
 }
 
