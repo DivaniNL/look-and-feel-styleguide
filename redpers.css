@@ -148,15 +148,17 @@ h3,
  color: var(--black);
  font-weight: 900;
  letter-spacing: var(--letter-spacing-s);
+ line-height: var(--line-height-l);
 }
-
 h4,
 .h4 {
  font-size: var(--font-size-header-xs);
  color: var(--black);
  font-weight: bold;
  letter-spacing: var(--letter-spacing-xs);
+ line-height: var(--line-height-l);
 }
+
 
 /* TEXTS */
 p {
