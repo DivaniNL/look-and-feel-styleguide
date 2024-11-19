@@ -205,7 +205,7 @@ p a {
  /* Metatekst */
  line-height: var(--line-height-m);
  font-size: var(--font-size-meta);
- letter-spacing: var(--letter-spacing-l);
+ letter-spacing: 0;
 }
 
 .text_label_top {
