@@ -74,7 +74,7 @@ body {
  --font-size-header-m: 1.25rem; /* 20px ÷ 16 = 1.25rem */
  --font-size-header-s: 1.125rem; /* 18px ÷ 16 = 1.125rem */
  --font-size-header-xs: 0.875rem; /* 14px ÷ 16 = 0.875rem */
-
+ --font-size-header-article: 1.75rem; /* 28px ÷ 16 = 1.75rem */
  /*  LETTER SPACINGS  */
 
  --letter-spacing-s: -1px;
@@ -130,7 +130,10 @@ h2.heading_article,
  font-family: var(--font-heading-important), Verdana, sans-serif;
  font-weight: bold;
  line-height: var(--line-height-xs);
- font-size: var(--font-size-header-xxl);
+ font-size: var(--font-size-header-s);
+ @media (min-width: 860px){
+     font-size: var(--font-size-header-article);
+ }
 }
 
 h1.heading_quote,
@@ -141,7 +144,10 @@ h2.heading_quote,
  font-family: var(--font-heading-important), Verdana, sans-serif;
  font-weight: bold;
  line-height: var(--line-height-xs);
- font-size: var(--font-size-header-xl);
+ font-size: var(--font-size-header-s);
+ @media (min-width: 860px){
+     font-size: var(--font-size-header-xl);
+ }
 }
 
 h3,
