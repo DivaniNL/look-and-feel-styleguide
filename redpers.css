@@ -218,7 +218,7 @@ p a {
  /*intro text*/
  font-weight: 300;
  font-size: var(--font-size-intro);
- letter-spacing: var(--letter-spacing-s);
+ letter-spacing: var(--letter-spacing-l);
 }
 
 .text_subheading {
