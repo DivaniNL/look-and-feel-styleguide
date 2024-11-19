@@ -88,16 +88,14 @@ body {
  box-sizing: border-box;
  font-family: var(--font-default); /* Fallback font */
  color: var(--black); /* base text color */
-}
-
-@media (prefers-contrast: more) { /* WCAG AAA colors */
- body {
+ @media (prefers-contrast: more) { /* WCAG AAA colors */
   --primary-color: #841E10;
   --primary-color-accent: #8b504b;
   --darkgrey: #757575;
   --secondary-color-dark: #4B5F2B;
  }
 }
+
 
 /* HEADINGS */
 
