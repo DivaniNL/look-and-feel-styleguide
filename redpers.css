@@ -414,7 +414,7 @@ form.form_search {
  background-color: var(--lightgrey);
  border-radius: 1px; /* Adds a 1px border radius */
  position: relative;
- &_primary {
+ &.primary {
   /* red version */
   background-color: var(--primary-color);
  }
