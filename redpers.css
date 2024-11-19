@@ -86,7 +86,7 @@ body {
  margin: 0;
  padding: 0;
  box-sizing: border-box;
- font-family: var(--font-default); /* Fallback font */
+ font-family: var(--font-default), Verdana, sans-serif; /* Fallback font */
  color: var(--black); /* base text color */
  @media (prefers-contrast: more) { /* WCAG AAA colors */
   --primary-color: #841E10;
@@ -106,7 +106,7 @@ h1,
  color: var(--black);
  line-height: var(--line-height-xs);
  font-weight: bold;
- font-family: var(--font-heading-important);
+ font-family: var(--font-heading-important), Verdana, sans-serif;
 }
 
 h2,
@@ -121,7 +121,7 @@ h1.heading_article,
 h2.heading_article,
 .h2.heading_article {
  /*Artikelkop */
- font-family: var(--font-heading-important);
+ font-family: var(--font-heading-important), Verdana, sans-serif;
  font-weight: bold;
  line-height: var(--line-height-xs);
  font-size: var(--font-size-header-xxl);
@@ -132,7 +132,7 @@ h1.heading_quote,
 h2.heading_quote,
 .h2.heading_quote {
  /*Quote */
- font-family: var(--font-heading-important);
+ font-family: var(--font-heading-important), Verdana, sans-serif;
  font-weight: bold;
  line-height: var(--line-height-xs);
  font-size: var(--font-size-header-xl);
@@ -140,7 +140,7 @@ h2.heading_quote,
 
 h3,
 .h3 {
- font-size: var(--font-size-header-s);
+ font-size: var(--font-size-header-s), Verdana, sans-serif;
  color: var(--black);
  font-weight: 900;
  letter-spacing: var(--letter-spacing-s);
@@ -148,7 +148,7 @@ h3,
 }
 h4,
 .h4 {
- font-size: var(--font-size-header-xs);
+ font-size: var(--font-size-header-xs), Verdana, sans-serif;
  color: var(--black);
  font-weight: bold;
  letter-spacing: var(--letter-spacing-s);
@@ -159,7 +159,7 @@ h4,
 /* TEXTS */
 p {
  /* base values for text */
- font-size: var(--font-size-text);
+ font-size: var(--font-size-text), Verdana, sans-serif;
 }
 
 p a {
