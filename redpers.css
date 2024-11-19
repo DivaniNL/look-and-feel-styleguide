@@ -217,7 +217,6 @@ p a {
 
 .text_intro {
  /*intro text*/
- font-weight: bold;
  font-size: var(--font-size-intro);
  letter-spacing: var(--letter-spacing-s);
 }
