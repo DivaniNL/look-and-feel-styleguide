@@ -206,6 +206,7 @@ p a {
  line-height: var(--line-height-m);
  font-size: var(--font-size-meta);
  letter-spacing: 0;
+ text-transform: uppercase;
 }
 
 .text_label_top {
