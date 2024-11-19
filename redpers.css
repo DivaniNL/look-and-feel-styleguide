@@ -6,7 +6,7 @@
  font-family: "Tiempos Text";
  src: url("/fonts/TiemposText-Regular.woff2") format("woff2"),
       url("/fonts/TiemposText-Regular.woff") format("woff"),
-      url("./../fonts/TiemposText-Regular.otf") format("opentype");
+      url("/fonts/TiemposText-Regular.otf") format("opentype");
  font-weight: normal;
  font-style: normal;
 }
