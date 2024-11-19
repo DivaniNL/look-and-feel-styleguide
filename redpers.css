@@ -226,11 +226,11 @@ p a {
  /* three grey buttons */
  background-color: var(--light-border);
  color: var(--grey-text);
- width: 3rem;
- height: 3rem;
+ width: 2.25rem;
+ height: 2.25rem;
  justify-content: center;
  padding: 4px;
- font-size: 1rem;
+ font-size: var(--font-size-menu);
  letter-spacing: var(--letter-spacing-l);
  line-height: 20px;
  display: flex;
@@ -251,11 +251,11 @@ p a {
 .button_play {
  /* the button to play and pause reading the article */
  column-gap: 10px;
- padding: 4px 1rem 4px 4px;
+ padding: 4px 0.75rem 4px 4px;
  background-color: var(--primary-color-light);
  color: var(--primary-color-accent);
  padding: 4px;
- font-size: 1rem;
+ font-size: var(--font-size-menu);
  letter-spacing: var(--letter-spacing-l);
  line-height: 20px;
  display: flex;
@@ -290,7 +290,7 @@ p a {
  /* cta buttons in menu */
  color: var(--white);
  display: block;
- padding: 6px 1.5em;
+ padding: 6px 1.125em;
  background-size: 100% 200%;
  transition: 0.3s ease;
  background-position: bottom;
@@ -303,7 +303,7 @@ p a {
 
 .button_subscribe {
  /* Nieuwsletter popup */
- padding: 2px 1.5em;
+ padding: 2px 1.125em;
  background-size: 100% 200%;
  transition: 0.3s ease;
  background-position: bottom;
@@ -354,8 +354,8 @@ p a {
  /*button at authorinfo with chevron */
  background-color: var(--lightgrey);
  color: var(--darkgrey);
- width: 3rem;
- height: 3rem;
+ width: 2.25rem;
+ height: 2.25rem;
  &:hover,
  &:focus {
   background-color: var(--black);
