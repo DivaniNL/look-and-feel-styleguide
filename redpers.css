@@ -340,10 +340,15 @@ p a {
  height: 48px;
  width: 50px;
  background-color: var(--grey);
+ transition: 0.3s ease;
  svg {
   width: 16px;
   height: 16px;
   fill: var(--white);
+ }
+ &:focus,
+ &:hover {
+  background-color: var(--black);
  }
 }
 
