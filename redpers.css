@@ -203,7 +203,6 @@ p a {
 
 .text_meta {
  /* Metatekst */
- font-weight: bold;
  line-height: var(--line-height-m);
  font-size: var(--font-size-meta);
  letter-spacing: var(--letter-spacing-l);
