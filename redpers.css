@@ -211,7 +211,7 @@ p a {
 
 .text_menu {
  /* Menutekst */
- font-size: var(--font-size-meta);
+ font-size: var(--font-size-menu);
  letter-spacing: var(--letter-spacing-l);
  color: inherit;
  text-transform: uppercase;
