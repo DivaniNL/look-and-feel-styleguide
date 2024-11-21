@@ -207,6 +207,7 @@ p a {
  font-size: var(--font-size-meta);
  letter-spacing: 0;
  text-transform: uppercase;
+ line-height: var(--line-height-m);
 }
 
 .text_menu {
