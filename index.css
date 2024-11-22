@@ -366,3 +366,8 @@ details:nth-of-type(3) figure:nth-of-type(2) code {
   padding: 1em;
   border: solid 2px rgb(0, 0, 0);
 }
+.intro{
+  z-index: 999;
+  position: relative;
+  text-align: center;
+}
