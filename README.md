@@ -2,6 +2,8 @@
 
 Dit project bevat de styleguide voor Red Pers. Deze styleguide bevat HTML-code waarin alle elementen getoond worden. Hierin zit ook het gezamenlijke CSS-stijlenbestand voor Red Pers, ontwikkeld om consistentie en herkenbaarheid in de stijl van de website te waarborgen. De huisstijl maakt gebruik van gedefinieerde kleuren, typografie, en stijlelementen die over verschillende pagina’s en componenten heen toegepast worden.
 
+De stylesheet kan hier worden geraadpleegd: https://divaninl.github.io/redpers-styleguide/redpers.css
+
 ## Inhoud
 
 1. [Bestandsstructuur](#bestandsstructuur)
