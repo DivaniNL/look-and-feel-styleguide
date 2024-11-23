@@ -397,6 +397,29 @@ input[type="reset"] {
  font: inherit;
  cursor: pointer;
 }
+/* Base inputs */
+input:not([type="submit"]), textarea{
+ width: 100%;
+ resize: none;
+ max-width: 100%;
+ font-size: 1rem;
+ margin-top: 0.6875rem;
+ padding: 20px 10px;
+ border: 0;
+ color: var(--primary-color);
+ outline: 2px solid var(--primary-color-light);
+ background: var(--primary-color-lighter);
+ &::placeholder{
+  color: var(--primary-color);
+ }
+ &:active,
+ &:focus {
+  outline: 2px solid var(--primary-color);
+ }
+ &:invalid{
+  outline: 2px solid var(--primary-color);
+ }
+}
 /* INPUT SUBMIT EN RESET */
 input[type="submit"], 
 input[type="reset"] {
