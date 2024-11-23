@@ -239,6 +239,152 @@ p a {
 }
 /* --- BUTTONS AND FORMS --- */
 
+/* BUTTONS */
+
+.button_utility {
+ /* three grey buttons */
+ background-color: var(--light-border);
+ color: var(--grey-text);
+ width: 2.25rem;
+ height: 2.25rem;
+ justify-content: center;
+ padding: 4px;
+ font-size: var(--font-size-menu);
+ letter-spacing: var(--letter-spacing-l);
+ line-height: 20px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ &:hover,
+ &:focus {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+  svg,
+  svg > * {
+   color: var(--white);
+   fill: var(--white);
+  }
+ }
+}
+
+.button_play {
+ /* the button to play and pause reading the article */
+ column-gap: 10px;
+ padding: 4px 0.75rem 4px 4px;
+ background-color: var(--primary-color-light);
+ color: var(--primary-color-accent);
+ padding: 4px;
+ font-size: var(--font-size-menu);
+ letter-spacing: var(--letter-spacing-l);
+ line-height: 20px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+
+ &:hover,
+ &:focus {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+  svg,
+  svg > * {
+   color: var(--white);
+   fill: var(--white);
+  }
+ }
+
+ &.silent {
+  #audio_stop {
+   display: none;
+  }
+ }
+
+ svg,
+ svg > * {
+  color: var(--primary-color-accent);
+  fill: var(--primary-color-accent);
+ }
+}
+
+.button_menu {
+ /* cta buttons in menu */
+ color: var(--white);
+ display: block;
+ padding: 6px 1.125em;
+ background-size: 100% 200%;
+ transition: 0.3s ease;
+ background-position: bottom;
+ background-image: linear-gradient(var(--black) 50%, var(--primary-color) 50%);
+ &:focus,
+ &:hover {
+  background-position: top;
+ }
+}
+
+.button_subscribe {
+ /* Nieuwsletter popup */
+ padding: 2px 1.125em;
+ background-size: 100% 200%;
+ transition: 0.3s ease;
+ background-position: bottom;
+ background-image: linear-gradient(var(--black) 50%, var(--primary-color) 50%);
+ color: var(--white);
+ font-size: 15px;
+ padding: 0.5em;
+ border-radius: 3px;
+ text-align: center;
+ width: 100%;
+ display: block;
+ svg {
+  width: 1em;
+  height: 1em;
+  > * {
+   fill: var(--white);
+   clip-path: var(--white);
+  }
+ }
+
+ &:hover,
+ &:focus {
+  background-position: top;
+ }
+ @media (min-width: 400px) {
+  padding: 1em 2em;
+ }
+}
+
+.button_search {
+ /* button with search icon */
+ height: 48px;
+ width: 50px;
+ background-color: var(--grey);
+ transition: 0.3s ease;
+ svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--white);
+ }
+ &:focus,
+ &:hover {
+  background-color: var(--black);
+ }
+}
+
+.button_readmore {
+ /*button at authorinfo with chevron */
+ background-color: var(--lightgrey);
+ color: var(--darkgrey);
+ width: 2.25rem;
+ height: 2.25rem;
+ &:hover,
+ &:focus {
+  background-color: var(--black);
+  svg {
+   path {
+    fill: var(--white);
+   }
+  }
+ }
+}
 
 /* FORMS */
 button, /* Remove base button styling because it blows */
@@ -290,151 +436,3 @@ form.form_search {
   background-color: var(--primary-color);
  }
 }
-
-
-/* BUTTONS */
-
-.button_utility {
-     /* three grey buttons */
-     background-color: var(--light-border);
-     color: var(--grey-text);
-     width: 2.25rem;
-     height: 2.25rem;
-     justify-content: center;
-     padding: 4px;
-     font-size: var(--font-size-menu);
-     letter-spacing: var(--letter-spacing-l);
-     line-height: 20px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     &:hover,
-     &:focus {
-      background-color: var(--black) !important;
-      color: var(--white) !important;
-      svg,
-      svg > * {
-       color: var(--white);
-       fill: var(--white);
-      }
-     }
-    }
-    
-    .button_play {
-     /* the button to play and pause reading the article */
-     column-gap: 10px;
-     padding: 4px 0.75rem 4px 4px;
-     background-color: var(--primary-color-light);
-     color: var(--primary-color-accent);
-     padding: 4px;
-     font-size: var(--font-size-menu);
-     letter-spacing: var(--letter-spacing-l);
-     line-height: 20px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-    
-     &:hover,
-     &:focus {
-      background-color: var(--black) !important;
-      color: var(--white) !important;
-      svg,
-      svg > * {
-       color: var(--white);
-       fill: var(--white);
-      }
-     }
-    
-     &.silent {
-      #audio_stop {
-       display: none;
-      }
-     }
-    
-     svg,
-     svg > * {
-      color: var(--primary-color-accent);
-      fill: var(--primary-color-accent);
-     }
-    }
-    
-    .button_menu {
-     /* cta buttons in menu */
-     color: var(--white);
-     display: block;
-     padding: 6px 1.125em;
-     background-size: 100% 200%;
-     transition: 0.3s ease;
-     background-position: bottom;
-     background-image: linear-gradient(var(--black) 50%, var(--primary-color) 50%);
-     &:focus,
-     &:hover {
-      background-position: top;
-     }
-    }
-    
-    .button_subscribe {
-     /* Nieuwsletter popup */
-     padding: 2px 1.125em;
-     background-size: 100% 200%;
-     transition: 0.3s ease;
-     background-position: bottom;
-     background-image: linear-gradient(var(--black) 50%, var(--primary-color) 50%);
-     color: var(--white);
-     font-size: 15px;
-     padding: 0.5em;
-     border-radius: 3px;
-     text-align: center;
-     width: 100%;
-     display: block;
-     svg {
-      width: 1em;
-      height: 1em;
-      > * {
-       fill: var(--white);
-       clip-path: var(--white);
-      }
-     }
-    
-     &:hover,
-     &:focus {
-      background-position: top;
-     }
-     @media (min-width: 400px) {
-      padding: 1em 2em;
-     }
-    }
-    
-    .button_search {
-     /* button with search icon */
-     height: 48px;
-     width: 50px;
-     background-color: var(--grey);
-     transition: 0.3s ease;
-     svg {
-      width: 16px;
-      height: 16px;
-      fill: var(--white);
-     }
-     &:focus,
-     &:hover {
-      background-color: var(--black);
-     }
-    }
-    
-    .button_readmore {
-     /*button at authorinfo with chevron */
-     background-color: var(--lightgrey);
-     color: var(--darkgrey);
-     width: 2.25rem;
-     height: 2.25rem;
-     &:hover,
-     &:focus {
-      background-color: var(--black);
-      svg {
-       path {
-        fill: var(--white);
-       }
-      }
-     }
-    }
