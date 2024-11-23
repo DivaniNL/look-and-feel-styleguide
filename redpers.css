@@ -417,7 +417,7 @@ input:not([type="submit"]), textarea{
  }
  &:active,
  &:focus {
-  outline: 2px solid var(--primary-color);
+  outline: 2px solid var(--primary-color) !important;
  }
  &:invalid{
   outline: 2px solid var(--primary-color);
