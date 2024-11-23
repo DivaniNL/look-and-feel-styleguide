@@ -397,6 +397,38 @@ input[type="reset"] {
  font: inherit;
  cursor: pointer;
 }
+/* INPUT SUBMIT EN RESET */
+input[type="submit"], 
+input[type="reset"] {
+ padding: 2px 1.125em;
+ background-size: 100% 200%;
+ transition: 0.3s ease;
+ background-position: bottom;
+ background-image: linear-gradient(var(--black) 50%, var(--primary-color) 50%);
+ color: var(--white);
+ font-size: 15px;
+ padding: 0.5em;
+ border-radius: 3px;
+ text-align: center;
+ width: 100%;
+ display: block;
+ svg {
+  width: 1em;
+  height: 1em;
+  > * {
+   fill: var(--white);
+   clip-path: var(--white);
+  }
+ }
+
+ &:hover,
+ &:focus {
+  background-position: top;
+ }
+ @media (min-width: 400px) {
+  padding: 1em 2em;
+ }
+}
 
 form.form_search {
  display: flex;
