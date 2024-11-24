@@ -393,6 +393,61 @@ p a {
 }
 
 /* FORMS */
+
+form:not(.form_search){
+ max-width: 818px;
+
+ fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--primary-color-accent);
+  color: var(--primary-color);
+  background-color: var(--primary-color-lightest);
+  margin: 2.5rem 0;
+  padding: 1.6875rem;
+
+  label{
+   display: grid;
+   margin-bottom: 2.5rem;
+   position: relative;
+
+   .message_error{
+    display: none;
+    background-color: var(--primary-color);
+    outline: 2px solid var(--primary-color);
+    color: white;
+    padding: 7px 10px;
+    font-size: 0.75rem;
+    top: calc(100% + 2px);
+    width: 100%;
+    position: absolute;
+
+    @media (min-width: 860px){
+     padding: 15px 10px;
+     font-size: 1rem;
+    }
+   }
+   
+   textarea{
+    height: 7.5rem;
+   }
+   
+   @media (min-width: 860px){
+    margin-bottom: 3.75rem;
+   }
+  }
+
+  input:invalid,
+  textarea:invalid {
+   outline: 2px solid var(--primary-color-light); /* Overwrite Shared sheet because i use JavaScript for this */
+  }
+  
+  input.invalid,
+  textarea.invalid {
+   outline: 2px solid var(--primary-color); /* Custom outline when invalid */
+  }
+ }
+}
 button, /* Remove base button styling because it blows */
 input[type="submit"], 
 input[type="reset"] {
