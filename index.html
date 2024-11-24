@@ -227,6 +227,49 @@
               </svg>
           </button>
       </form>
+      <form method="POST" id="Submit" action="success.html">
+
+        <fieldset>
+  
+         <legend class="hidden">Contactgegevens</legend>
+  
+         <label>
+          Naam:
+          <input required type="text" id="name" name="name" placeholder="Vul hier uw naam in">
+  
+          <p id="nameError" class="message_error"></p>
+  
+         </label>
+  
+         <label>
+          Email-adres:
+          <input required type="email" id="email" name="email" placeholder="Vul hier uw email-adres in">
+  
+          <p id="emailError" class="message_error"></p>
+  
+         </label>
+  
+         <label>
+          Onderwerp:
+          <input required type="text" id="subject" name="subject" placeholder="Vul hier het onderwerp in">
+  
+          <p id="subjectError" class="message_error"></p>
+  
+         </label>
+  
+         <label>
+          Bericht:
+          <textarea id="message" name="message" placeholder="Vul hier uw bericht in"></textarea>
+  
+          <p id="messageError" class="message_error"></p>
+  
+         </label>
+  
+         <input type="submit" value="Verzenden">
+  
+        </fieldset>
+  
+       </form>
       <br><br> 
       </section>
   </body>
