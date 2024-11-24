@@ -78,6 +78,7 @@ body {
  --font-size-header-s: 1.125rem; /* 18px ÷ 16 = 1.125rem */
  --font-size-header-xs: 0.875rem; /* 14px ÷ 16 = 0.875rem */
  --font-size-header-article: 1.75rem; /* 28px ÷ 16 = 1.75rem */
+ --font-size-footer: 1rem; /*16px ÷ 16 = 1rem*/
  /*  LETTER SPACINGS  */
 
  --letter-spacing-s: -1px;
