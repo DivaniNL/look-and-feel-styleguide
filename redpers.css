@@ -410,23 +410,6 @@ form:not(.form_search){
    display: grid;
    margin-bottom: 2.5rem;
    position: relative;
-
-   .message_error{
-    display: none;
-    background-color: var(--primary-color);
-    outline: 2px solid var(--primary-color);
-    color: white;
-    padding: 7px 10px;
-    font-size: 0.75rem;
-    top: calc(100% + 2px);
-    width: 100%;
-    position: absolute;
-
-    @media (min-width: 860px){
-     padding: 15px 10px;
-     font-size: 1rem;
-    }
-   }
    
    textarea{
     height: 7.5rem;
@@ -441,11 +424,7 @@ form:not(.form_search){
   textarea:invalid {
    outline: 2px solid var(--primary-color-light); /* Overwrite Shared sheet because i use JavaScript for this */
   }
-  
-  input.invalid,
-  textarea.invalid {
-   outline: 2px solid var(--primary-color); /* Custom outline when invalid */
-  }
+
  }
 }
 button, /* Remove base button styling because it blows */
