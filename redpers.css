@@ -442,6 +442,7 @@ input[type="reset"] {
 form:not(.form_search) {
  input:not([type="submit"]),
  textarea {
+  appearance: none;
   width: initial;
   resize: none;
   max-width: 100%;
